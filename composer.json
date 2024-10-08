@@ -1,0 +1,14 @@
+{
+  "name": "chaiqou/kutaisiPHP",
+  "description": "A PHP framework for georgian web artisans",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nikoloz",
+      "email": "lomtadzenikusha@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}

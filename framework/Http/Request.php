@@ -4,25 +4,14 @@ namespace Chaiqou\Framework\Http;
 
 class Request
 {
-    public $getParams;
-    public $postParams;
-    public $cookies;
-    public $files;
-    public $server;
-
     public function __construct(
-    array $getParams,
-    array $postParams,
-    array $cookies,
-    array $files,
-    array $server
+    private readonly array $getParams,
+    private readonly array $postParams,
+    private readonly array $cookies,
+    private readonly array $files,
+    private readonly array $server
 )
 {
-    $this->postParams = $postParams;
-    $this->getParams = $getParams;
-    $this->cookies = $cookies;
-    $this->files = $files;
-    $this->server = $server;
 }
 
     public static function createFromGlobals(): Request

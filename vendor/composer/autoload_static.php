@@ -8,6 +8,7 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
@@ -16,6 +17,14 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+        ),
+        'F' => 
+        array (
+            'FastRoute\\' => 10,
         ),
         'C' => 
         array (
@@ -35,6 +44,14 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
         'Chaiqou\\Framework\\' => 
         array (

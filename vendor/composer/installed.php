@@ -3,7 +3,7 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fc091d6e7e22c200272f4a0342c558ac05028e91',
+        'reference' => 'ef784c7579db15be7c777445a38f6cad71a54fb7',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,10 +13,32 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fc091d6e7e22c200272f4a0342c558ac05028e91',
+            'reference' => 'ef784c7579db15be7c777445a38f6cad71a54fb7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'nikic/fast-route' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'd3ada013d0f683ad2a8d0614fc97917a6ab72ce9',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/fast-route',
+            'aliases' => array(
+                0 => '2.0.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'psr/simple-cache' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '2d280c2aaa23a120f35d55cfde8581954a8e77fa',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/simple-cache',
+            'aliases' => array(
+                0 => '3.0.x-dev',
+            ),
             'dev_requirement' => false,
         ),
         'symfony/polyfill-mbstring' => array(
@@ -26,7 +48,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
             'aliases' => array(),
-            'dev_requirement' => false,
+            'dev_requirement' => true,
         ),
         'symfony/var-dumper' => array(
             'pretty_version' => '7.2.x-dev',
@@ -35,7 +57,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
-            'dev_requirement' => false,
+            'dev_requirement' => true,
         ),
     ),
 );

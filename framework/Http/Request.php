@@ -5,11 +5,11 @@ namespace Chaiqou\Framework\Http;
 class Request
 {
     public function __construct(
-    private readonly array $getParams,
-    private readonly array $postParams,
-    private readonly array $cookies,
-    private readonly array $files,
-    private readonly array $server
+        private readonly array $getParams,
+        private readonly array $postParams,
+        private readonly array $cookies,
+        private readonly array $files,
+        public readonly array $server
 )
 {
 }

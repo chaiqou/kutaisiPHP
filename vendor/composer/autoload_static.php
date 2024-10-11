@@ -26,9 +26,9 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             'FastRoute\\' => 10,
         ),
-        'C' => 
+        'A' => 
         array (
-            'Chaiqou\\Framework\\' => 18,
+            'App\\' => 4,
         ),
     );
 
@@ -49,7 +49,7 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
-        'Chaiqou\\Framework\\' => 
+        'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),

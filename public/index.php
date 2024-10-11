@@ -1,6 +1,3 @@
-<?php declare(strict_types=1);
+<?php
 
-require_once dirname(__DIR__) . '/vendor/autoload.php';
-
-
-echo 'Hello, World!';
+require dirname(__DIR__) . '/bootstrap/app.php';

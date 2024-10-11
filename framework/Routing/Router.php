@@ -21,6 +21,9 @@ class Router implements RouterInterface
         return [[new $controller, $method], $variables];
     }
 
+    /**
+     * @throws \Exception
+     */
     private function extractRouteInfo(Request $request): Matched|MethodNotAllowed|NotMatched
     {
         $dispatcher = simpleDispatcher(function (\FastRoute\RouteCollector $routeCollector) {

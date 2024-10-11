@@ -5,6 +5,8 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 use App\Core\App;
 use Spatie\Ignition\Ignition;
 
+error_reporting(0);
+
 // Register Ignition for better error handling
 Ignition::make()->register ();
 

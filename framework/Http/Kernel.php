@@ -2,30 +2,26 @@
 
 namespace Chaiqou\Framework\Http;
 
-use function FastRoute\simpleDispatcher;
+
+use Chaiqou\Framework\Routing\Router;
 
 class Kernel
 {
+    public function __construct(public Router $router)
+    {
+    }
 
     public function handle(Request $request)
     {
-        $dispatcher = simpleDispatcher(function (\FastRoute\RouteCollector $routeCollector) {
-            $routes = require BASE_PATH . '/routes/web.php';
-            foreach ($routes as $route) {
-                [$method, $path, $handler] = $route;
-                $routeCollector->addRoute($method, $path, $handler);
-            }
-        });
 
-        $routeInfo = $dispatcher
-            ->dispatch(
-                $request->getMethod(),
-                $request->getPathInfo()
-            );
+        try {
+           [$routeHandler, $variables] = $this->router->dispatch($request);
 
-        [$status, [$controller, $method], $variables] = $routeInfo;
+           $response = call_user_func_array($routeHandler, $variables);
+        } catch (\Exception $exception) {
+            $response = new Response($exception->getMessage(), 400);
+        }
 
-
-        return (new $controller)->$method(...$variables);
+        return $response;
     }
 }

@@ -11,5 +11,5 @@ return array(
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Chaiqou\\Framework\\' => array($baseDir . '/framework'),
-    'App\\' => array($baseDir . '/app'),
+    'App\\' => array($baseDir . '/src'),
 );

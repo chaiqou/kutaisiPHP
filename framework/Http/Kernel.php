@@ -7,7 +7,7 @@ use function FastRoute\simpleDispatcher;
 class Kernel
 {
 
-    public function handle(Request $request): Response
+    public function handle(Request $request)
     {
         $dispatcher = simpleDispatcher(function (\FastRoute\RouteCollector $routeCollector) {
             $routes = require BASE_PATH . '/routes/web.php';
@@ -23,8 +23,9 @@ class Kernel
                 $request->getPathInfo()
             );
 
-        [$status,$handler,$variables] = $routeInfo;
+        [$status, [$controller, $method], $variables] = $routeInfo;
 
-        return $handler($variables);
+
+        return (new $controller)->$method($variables);
     }
 }

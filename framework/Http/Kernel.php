@@ -26,6 +26,6 @@ class Kernel
         [$status, [$controller, $method], $variables] = $routeInfo;
 
 
-        return (new $controller)->$method($variables);
+        return (new $controller)->$method(...$variables);
     }
 }

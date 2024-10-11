@@ -1,21 +1,6 @@
 <?php declare(strict_types=1);
 
-
-use Chaiqou\Framework\Http\Kernel;
-use Chaiqou\Framework\Http\Request;
-use Chaiqou\Framework\Http\Response;
-use Chaiqou\Framework\Routing\Router;
-
-define("BASE_PATH", dirname(__DIR__));
-
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-$request = Request::createFromGlobals();
 
-$router = new Router();
-
-$kernel = new Kernel($router);
-
-$response = $kernel->handle($request);
-
-$response->send();
+echo 'Hello, World!';

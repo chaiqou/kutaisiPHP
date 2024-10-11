@@ -10,6 +10,5 @@ return array(
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
-    'Chaiqou\\Framework\\' => array($baseDir . '/framework'),
-    'App\\' => array($baseDir . '/src'),
+    'Chaiqou\\Framework\\' => array($baseDir . '/app'),
 );

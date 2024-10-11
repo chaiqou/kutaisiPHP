@@ -30,10 +30,6 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             'Chaiqou\\Framework\\' => 18,
         ),
-        'A' => 
-        array (
-            'App\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -55,11 +51,7 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         ),
         'Chaiqou\\Framework\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/framework',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

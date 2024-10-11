@@ -3,7 +3,7 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ef784c7579db15be7c777445a38f6cad71a54fb7',
+        'reference' => '32fc721003f573f5a2b72c52b50825e6270cdb4d',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ef784c7579db15be7c777445a38f6cad71a54fb7',
+            'reference' => '32fc721003f573f5a2b72c52b50825e6270cdb4d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

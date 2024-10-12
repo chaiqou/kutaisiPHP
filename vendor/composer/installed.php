@@ -3,7 +3,7 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '263f715426eb3a9e65c136bb2016c5803456d5d6',
+        'reference' => 'b3af9da2095cba55e731df79d1758ec8e2e67384',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -24,7 +24,7 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '263f715426eb3a9e65c136bb2016c5803456d5d6',
+            'reference' => 'b3af9da2095cba55e731df79d1758ec8e2e67384',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -93,6 +93,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'league/container' => array(
+            'pretty_version' => '5.x-dev',
+            'version' => '5.9999999.9999999.9999999-dev',
+            'reference' => 'd4863766993ff24d2d245984c7861e35fc1a9384',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/container',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'nesbot/carbon' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
@@ -103,6 +112,12 @@
                 0 => '3.x-dev',
             ),
             'dev_requirement' => false,
+        ),
+        'orno/di' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '~2.0',
+            ),
         ),
         'psr/clock' => array(
             'pretty_version' => '1.0.0',
@@ -129,6 +144,12 @@
                 0 => '2.0.x-dev',
             ),
             'dev_requirement' => false,
+        ),
+        'psr/container-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '^1.0',
+            ),
         ),
         'psr/log-implementation' => array(
             'dev_requirement' => false,

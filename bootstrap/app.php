@@ -4,7 +4,6 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 use App\Config\Config;
 use App\Core\App;
 use App\Core\Container;
-use App\Providers\AppServiceProvide;
 use App\Providers\ConfigServiceProvider;
 use League\Container\ReflectionContainer;
 

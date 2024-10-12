@@ -1,6 +1,7 @@
 <?php
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
+use App\Config\Config;
 use App\Core\App;
 use App\Core\Container;
 use App\Providers\AppServiceProvide;
@@ -15,9 +16,15 @@ $container->delegate(
     new ReflectionContainer()
 );
 
-// Register Service Providers
+// Register the ConfigServiceProvider
 $container->addServiceProvider(new ConfigServiceProvider());
-$container->addServiceProvider(new AppServiceProvide());
+
+$config = $container->get(Config::class);
+
+// Register all the providers from the configuration
+foreach ($config->get('app.providers') as $provider) {
+    $container->addServiceProvider(new $provider());
+}
 
 
 // This file is the entry point of the application, it will create a new instance of the Config class

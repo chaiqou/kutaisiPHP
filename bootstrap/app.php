@@ -2,20 +2,18 @@
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 use App\Core\App;
+use App\Core\Container;
 use App\Providers\AppServiceProvide;
-use League\Container\Container;
 use League\Container\ReflectionContainer;
 
-error_reporting(0);
-
-
-$container = new Container();
+$container = Container::getInstance();
 
 // Delegate the container to manage the dependencies
 // explanation: https://container.thephpleague.com/3.x/auto-wiring/
 $container->delegate(
     new ReflectionContainer()
 );
+
 
 
 $container->addServiceProvider(new AppServiceProvide());

@@ -14,7 +14,7 @@ class Config
 
     public function get(string $key, $default = null)
     {
-       return dot($this->config)->get($key);
+       return dot($this->config)->get($key) ?? $default;
     }
 
 }

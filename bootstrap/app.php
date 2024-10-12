@@ -7,6 +7,10 @@ use App\Core\Container;
 use App\Providers\ConfigServiceProvider;
 use League\Container\ReflectionContainer;
 
+
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
 $container = Container::getInstance();
 
 // Delegate the container to manage the dependencies

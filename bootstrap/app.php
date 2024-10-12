@@ -7,7 +7,7 @@ use App\Core\Container;
 use App\Providers\ConfigServiceProvider;
 use League\Container\ReflectionContainer;
 
-
+// Load environment variables from .env file
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 

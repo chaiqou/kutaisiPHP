@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Config\Config;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 
@@ -10,12 +11,18 @@ class ConfigServiceProvider extends AbstractServiceProvider implements BootableS
 
     public function boot(): void
     {
-        // TODO: Implement boot() method.
+        $this->getContainer()->add(Config::class, function () {
+            return new Config();
+        });
     }
 
     public function provides(string $id): bool
     {
-        // TODO: Implement provides() method.
+        $services = [
+            Config::class
+        ];
+
+        return in_array($id, $services);
     }
 
     public function register(): void

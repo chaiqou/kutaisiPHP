@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87cb129277704c951ec595318b5d4fb3",
+    "content-hash": "5eb7650a22029e00301e869605de24f8",
     "packages": [
+        {
+            "name": "adbario/php-dot-notation",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adbario/php-dot-notation.git",
+                "reference": "d71a4b4c57c506bad3e3e9ec3f0013f541731e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adbario/php-dot-notation/zipball/d71a4b4c57c506bad3e3e9ec3f0013f541731e08",
+                "reference": "d71a4b4c57c506bad3e3e9ec3f0013f541731e08",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Adbar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riku Särkinen",
+                    "email": "riku@adbar.io"
+                }
+            ],
+            "description": "PHP dot notation access to arrays",
+            "homepage": "https://github.com/adbario/php-dot-notation",
+            "keywords": [
+                "ArrayAccess",
+                "dotnotation"
+            ],
+            "support": {
+                "issues": "https://github.com/adbario/php-dot-notation/issues",
+                "source": "https://github.com/adbario/php-dot-notation/tree/3.x"
+            },
+            "time": "2023-09-22T22:21:42+00:00"
+        },
         {
             "name": "carbonphp/carbon-doctrine-types",
             "version": "dev-main",
@@ -2567,6 +2622,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "league/container": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,

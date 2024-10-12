@@ -3,13 +3,22 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b3af9da2095cba55e731df79d1758ec8e2e67384',
+        'reference' => '3ceb9b0c36b23e520c6cf5bc113517b19efd57ff',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'adbario/php-dot-notation' => array(
+            'pretty_version' => '3.x-dev',
+            'version' => '3.9999999.9999999.9999999-dev',
+            'reference' => 'd71a4b4c57c506bad3e3e9ec3f0013f541731e08',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../adbario/php-dot-notation',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'carbonphp/carbon-doctrine-types' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
@@ -24,7 +33,7 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b3af9da2095cba55e731df79d1758ec8e2e67384',
+            'reference' => '3ceb9b0c36b23e520c6cf5bc113517b19efd57ff',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

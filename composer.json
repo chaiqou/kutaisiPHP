@@ -19,6 +19,7 @@
   },
   "require": {
     "spatie/ignition": "^1.15",
-    "league/container": "5.x-dev"
+    "league/container": "5.x-dev",
+    "adbario/php-dot-notation": "3.x-dev"
   }
 }

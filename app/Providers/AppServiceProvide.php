@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Config\Config;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 use Spatie\Ignition\Ignition;
@@ -13,7 +14,11 @@ class AppServiceProvide extends AbstractServiceProvider implements BootableServi
     {
         // Register Ignition for better error handling
         // Only do this in development mode
-        Ignition::make()->register ();
+        // Ignition will not be registered in production
+        $config = $this->container->get(Config::class);
+        if ($config->get('app.debug')) {
+            Ignition::make()->register();
+        }
     }
 
     public function provides(string $id): bool

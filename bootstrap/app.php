@@ -19,10 +19,6 @@ $container->delegate(
 $container->addServiceProvider(new ConfigServiceProvider());
 $container->addServiceProvider(new AppServiceProvide());
 
-dd($container->get(\App\Config\Config::class)->get('app.name'));
-
-die();
-
 
 // This file is the entry point of the application, it will create a new instance of the Config class
 // and start the application by calling the run method.

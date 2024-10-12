@@ -2,5 +2,5 @@
 
 
 return [
-    'name' => env('APP_NAME', 'Config'),
+    'name' => env('APP_NAME', 'KutaisiPHP'),
 ];

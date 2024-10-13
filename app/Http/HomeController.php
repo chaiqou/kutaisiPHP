@@ -3,15 +3,16 @@
 namespace App\Http;
 
 use Laminas\Diactoros\Response;
+use Psr\Http\Message\ServerRequestInterface;
 
 class HomeController
 {
 
-    public function __invoke(): Response
+    public function __invoke(ServerRequestInterface $request): Response
     {
         $response = new Response();
 
-        $response->getBody()->write('Hello, World!');
+        $response->getBody()->write($request->getUri()->getPath());
 
         return $response;
     }

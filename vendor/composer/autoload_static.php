@@ -82,6 +82,7 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             'League\\Route\\' => 13,
             'League\\Container\\' => 17,
+            'Laminas\\HttpHandlerRunner\\' => 26,
             'Laminas\\Diactoros\\' => 18,
         ),
         'I' => 
@@ -246,6 +247,10 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'Laminas\\HttpHandlerRunner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-httphandlerrunner/src',
         ),
         'Laminas\\Diactoros\\' => 
         array (

@@ -5,7 +5,9 @@ use App\Config\Config;
 use App\Core\App;
 use App\Core\Container;
 use App\Providers\ConfigServiceProvider;
+use Laminas\Diactoros\Response;
 use League\Container\ReflectionContainer;
+use League\Route\Router;
 
 // Load environment variables from .env file
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -36,7 +38,17 @@ foreach ($config->get('app.providers') as $provider) {
 
 // Setup Container
 
-$app = new App();
+$app = new App($container);
+
+
+$app->getRouter()->get('/', function () {
+    $response = new Response();
+
+    $response->getBody()->write('Hello, World!');
+
+   return $response;
+});
+
 
 // Register Routes
 

@@ -3,7 +3,7 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2c10b4e7a2868888ac9adb6f0d1e53476263537d',
+        'reference' => '045f8f3c9f1092d23bb066595c885f9130daf17f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -33,7 +33,7 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2c10b4e7a2868888ac9adb6f0d1e53476263537d',
+            'reference' => '045f8f3c9f1092d23bb066595c885f9130daf17f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -111,6 +111,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'laminas/laminas-diactoros' => array(
+            'pretty_version' => '3.5.x-dev',
+            'version' => '3.5.9999999.9999999-dev',
+            'reference' => 'f971d35461fcac9f7f2e5cf71b40a0856a6efbbc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laminas/laminas-diactoros',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'league/container' => array(
             'pretty_version' => '5.x-dev',
             'version' => '5.9999999.9999999.9999999-dev',
@@ -178,6 +187,38 @@
             'dev_requirement' => false,
             'provided' => array(
                 0 => '^1.0',
+            ),
+        ),
+        'psr/http-factory' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'reference' => '2b4765fddfe3b508ac62f829e852b1501d3f6e8a',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-factory',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'psr/http-factory-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '^1.0',
+            ),
+        ),
+        'psr/http-message' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '402d35bcb92c70c026d1a6a9883f06b2ead23d71',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-message',
+            'aliases' => array(
+                0 => '2.0.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'psr/http-message-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '^1.1 || ^2.0',
             ),
         ),
         'psr/log-implementation' => array(

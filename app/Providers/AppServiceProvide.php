@@ -23,7 +23,11 @@ class AppServiceProvide extends AbstractServiceProvider implements BootableServi
 
     public function provides(string $id): bool
     {
-       //
+        $provides = [
+            Config::class,
+        ];
+
+        return in_array($id, $provides);
     }
 
     public function register(): void

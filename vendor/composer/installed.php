@@ -3,7 +3,7 @@
         'name' => 'chaiqou/kutaisiphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '045f8f3c9f1092d23bb066595c885f9130daf17f',
+        'reference' => 'a61f9ad9815a3f6071628b0db2821a981cdc743e',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -33,7 +33,7 @@
         'chaiqou/kutaisiphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '045f8f3c9f1092d23bb066595c885f9130daf17f',
+            'reference' => 'a61f9ad9815a3f6071628b0db2821a981cdc743e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -129,6 +129,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'league/route' => array(
+            'pretty_version' => '6.x-dev',
+            'version' => '6.9999999.9999999.9999999-dev',
+            'reference' => 'b66c107cd2bc0705e5ecf86028772c6504d2df34',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/route',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'nesbot/carbon' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
@@ -140,10 +149,42 @@
             ),
             'dev_requirement' => false,
         ),
+        'nikic/fast-route' => array(
+            'pretty_version' => 'v1.x-dev',
+            'version' => '1.9999999.9999999.9999999-dev',
+            'reference' => '4012884e0b916e1bd895a5061d4abc3c99e283a4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/fast-route',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'opis/closure' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '3d81e4309d2a927abbe66df935f4bb60082805ad',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../opis/closure',
+            'aliases' => array(
+                0 => '3.6.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'orno/di' => array(
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '~2.0',
+            ),
+        ),
+        'orno/http' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '~1.0',
+            ),
+        ),
+        'orno/route' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '~1.0',
             ),
         ),
         'phpoption/phpoption' => array(
@@ -205,14 +246,12 @@
             ),
         ),
         'psr/http-message' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '402d35bcb92c70c026d1a6a9883f06b2ead23d71',
+            'pretty_version' => '1.1',
+            'version' => '1.1.0.0',
+            'reference' => 'cb6ce4845ce34a8ad9e68117c10ee90a29919eba',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/http-message',
-            'aliases' => array(
-                0 => '2.0.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'psr/http-message-implementation' => array(
@@ -221,6 +260,28 @@
                 0 => '^1.1 || ^2.0',
             ),
         ),
+        'psr/http-server-handler' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '13403d43196ab3382d0a4ca28be32984282641f9',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-server-handler',
+            'aliases' => array(
+                0 => '1.0.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'psr/http-server-middleware' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '459eeb7efeae55b4102a951c4ecc93a11ce58d0f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-server-middleware',
+            'aliases' => array(
+                0 => '1.0.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
@@ -228,14 +289,12 @@
             ),
         ),
         'psr/simple-cache' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '2d280c2aaa23a120f35d55cfde8581954a8e77fa',
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/simple-cache',
-            'aliases' => array(
-                0 => '3.0.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'spatie/backtrace' => array(
@@ -312,7 +371,7 @@
         'symfony/http-foundation' => array(
             'pretty_version' => '7.2.x-dev',
             'version' => '7.2.9999999.9999999-dev',
-            'reference' => 'c7dabc7f62ce264385e0916a8af661b79ba37520',
+            'reference' => 'ef0fff25b4209f3ece8ac892d9332b129bcfb434',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-foundation',
             'aliases' => array(),

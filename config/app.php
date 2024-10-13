@@ -9,5 +9,6 @@ return [
         App\Providers\AppServiceProvide::class,
         App\Providers\RequestServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
     ],
 ];

@@ -40,18 +40,9 @@ foreach ($config->get('app.providers') as $provider) {
 
 $app = new App($container);
 
-
-$app->getRouter()->get('/', function () {
-    $response = new Response();
-
-    $response->getBody()->write('Hello, World!');
-
-   return $response;
-});
-
-
-// Register Routes
-
+// Register Routes from routes/web.php
+// and pass the router and container to the closure
+(require(dirname(__DIR__) . '/routes/web.php'))($app->getRouter(), $container);
 
 $app->run();
 

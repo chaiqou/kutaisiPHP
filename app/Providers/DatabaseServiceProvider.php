@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Config\Config;
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Database\DatabaseManager;
 use League\Container\ServiceProvider\AbstractServiceProvider;
@@ -13,7 +14,7 @@ class DatabaseServiceProvider extends AbstractServiceProvider implements Bootabl
 
     public function boot(): void
     {
-        $config = $this->container->get('config');
+        $config = $this->container->get(Config::class);
         $driver = $config->get('database.driver');
 
         $capsule = new Manager();

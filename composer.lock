@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16b99a1a779faa8c5b414ac11d59c349",
+    "content-hash": "16a4b22b984ee9d93933d29cecee2757",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -192,6 +192,150 @@
             "time": "2024-04-07T15:25:35+00:00"
         },
         {
+            "name": "cartalyst/sentinel",
+            "version": "8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cartalyst/sentinel.git",
+                "reference": "60c7b41be64d19b75a55e9146b1c750c2f6b7d62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cartalyst/sentinel/zipball/60c7b41be64d19b75a55e9146b1c750c2f6b7d62",
+                "reference": "60c7b41be64d19b75a55e9146b1c750c2f6b7d62",
+                "shasum": ""
+            },
+            "require": {
+                "cartalyst/support": "^8.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "cartalyst/php-cs-fixer-config": "^2.0",
+                "illuminate/cookie": "^11.0",
+                "illuminate/database": "^11.0",
+                "illuminate/events": "^11.0",
+                "illuminate/http": "^11.0",
+                "illuminate/session": "^11.0",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "suggest": {
+                "illuminate/database": "By default, Sentinel utilizes the powerful Illuminate database layer.",
+                "illuminate/events": "To hook into various events across Sentinel, we recommend using Illuminate's event dispatcher.",
+                "symfony/http-foundation": "Required for native implementations."
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "branch-alias": {
+                    "dev-master": "8.0.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Cartalyst\\Sentinel\\Laravel\\SentinelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Activation": "Cartalyst\\Sentinel\\Laravel\\Facades\\Activation",
+                        "Reminder": "Cartalyst\\Sentinel\\Laravel\\Facades\\Reminder",
+                        "Sentinel": "Cartalyst\\Sentinel\\Laravel\\Facades\\Sentinel"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cartalyst\\Sentinel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cartalyst LLC",
+                    "email": "help@cartalyst.com",
+                    "homepage": "https://cartalyst.com"
+                }
+            ],
+            "description": "PHP 8.2+ Fully-featured Authentication & Authorization System",
+            "keywords": [
+                "auth",
+                "cartalyst",
+                "laravel",
+                "php",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/cartalyst/sentinel/issues",
+                "source": "https://github.com/cartalyst/sentinel/tree/v8.0.0"
+            },
+            "time": "2024-07-04T18:17:33+00:00"
+        },
+        {
+            "name": "cartalyst/support",
+            "version": "8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cartalyst/support.git",
+                "reference": "e33e555708531ee220254bc54075d2623487728b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cartalyst/support/zipball/e33e555708531ee220254bc54075d2623487728b",
+                "reference": "e33e555708531ee220254bc54075d2623487728b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "cartalyst/php-cs-fixer-config": "^2.0",
+                "illuminate/mail": "^11.0",
+                "illuminate/validation": "^11.0",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^10.0",
+                "symfony/translation": "^7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "branch-alias": {
+                    "dev-master": "7.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cartalyst\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cartalyst LLC",
+                    "email": "help@cartalyst.com",
+                    "homepage": "https://cartalyst.com"
+                }
+            ],
+            "description": "Support helpers.",
+            "keywords": [
+                "cartalyst",
+                "helper",
+                "laravel",
+                "support"
+            ],
+            "support": {
+                "issues": "https://github.com/cartalyst/support/issues",
+                "source": "https://github.com/cartalyst/support/tree/v8.0.0"
+            },
+            "time": "2024-03-31T11:56:55+00:00"
+        },
+        {
             "name": "doctrine/inflector",
             "version": "2.1.x-dev",
             "source": {
@@ -344,6 +488,59 @@
                 }
             ],
             "time": "2024-07-20T21:45:45+00:00"
+        },
+        {
+            "name": "illuminate/bus",
+            "version": "11.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/bus.git",
+                "reference": "ed8d93dd49d57887ccf82dbd284b80934288cbba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/ed8d93dd49d57887ccf82dbd284b80934288cbba",
+                "reference": "ed8d93dd49d57887ccf82dbd284b80934288cbba",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/collections": "^11.0",
+                "illuminate/contracts": "^11.0",
+                "illuminate/pipeline": "^11.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2"
+            },
+            "suggest": {
+                "illuminate/queue": "Required to use closures when chaining jobs (^7.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Bus\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Bus package.",
+            "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2024-10-11T15:12:02+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -613,6 +810,61 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2024-10-14T12:59:37+00:00"
+        },
+        {
+            "name": "illuminate/events",
+            "version": "11.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/events.git",
+                "reference": "cfd8a636234cc5b5f736f2987f33b0d471d974b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/cfd8a636234cc5b5f736f2987f33b0d471d974b3",
+                "reference": "cfd8a636234cc5b5f736f2987f33b0d471d974b3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "^11.0",
+                "illuminate/collections": "^11.0",
+                "illuminate/container": "^11.0",
+                "illuminate/contracts": "^11.0",
+                "illuminate/macroable": "^11.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Illuminate\\Events\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Events package.",
+            "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2024-08-07T14:43:54+00:00"
         },
         {
             "name": "illuminate/macroable",
@@ -3695,6 +3947,9 @@
         "laminas/laminas-diactoros": 20,
         "league/route": 20,
         "laminas/laminas-httphandlerrunner": 20,
+        "illuminate/database": 20,
+        "illuminate/events": 20,
+        "symfony/http-foundation": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,

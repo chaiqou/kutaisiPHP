@@ -36,6 +36,8 @@ class ViewServiceProvider extends AbstractServiceProvider implements BootableSer
               'debug' => $this->getContainer()->get(Config::class)->get('app.debug')
           ]);
 
+          $twig->addExtension(new \Twig\Extension\DebugExtension());
+
           return new View($twig);
         });
     }

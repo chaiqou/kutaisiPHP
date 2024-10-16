@@ -19,11 +19,8 @@ class UsersController
     {
         ['user' => $userId] = $arguments;
 
-        $user = User::find($userId);
+        $user = User::findOrFail($userId);
 
-        if (!$user) {
-            return new Response();
-        }
         $response = new Response();
 
         $response->getBody()->write(

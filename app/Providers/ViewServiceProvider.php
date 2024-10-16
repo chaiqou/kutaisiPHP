@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Config\Config;
 use App\Views\View;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -32,7 +33,7 @@ class ViewServiceProvider extends AbstractServiceProvider implements BootableSer
 
           $twig = new Environment($loader, [
               'cache' => false,
-              'debug' => true
+              'debug' => $this->getContainer()->get(Config::class)->get('app.debug')
           ]);
 
           return new View($twig);

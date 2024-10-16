@@ -30,13 +30,16 @@ class ViewServiceProvider extends AbstractServiceProvider implements BootableSer
     {
         $this->getContainer()->add(View::class, function () {
           $loader = new FilesystemLoader(__DIR__ . '/../../resources/views');
+          $debug = $this->getContainer()->get(Config::class)->get('app.debug');
 
           $twig = new Environment($loader, [
               'cache' => false,
-              'debug' => $this->getContainer()->get(Config::class)->get('app.debug')
+              'debug' => $debug
           ]);
 
-          $twig->addExtension(new \Twig\Extension\DebugExtension());
+          if($debug) {
+              $twig->addExtension(new \Twig\Extension\DebugExtension());
+          }
 
           return new View($twig);
         });

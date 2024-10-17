@@ -3,22 +3,22 @@
 namespace App\Providers;
 
 use App\Config\Config;
-use Cartalyst\Sentinel\Native\Facades\Sentinel;
 use Cartalyst\Sentinel\Native\SentinelBootstrapper;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
+use Cartalyst\Sentinel\Sentinel;
 
 class AuthServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface
 {
 
-    protected $sentinel;
+    protected Sentinel $sentinel;
     public function boot(): void
     {
         $bootstrapper = new SentinelBootstrapper(
             $this->getContainer()->get(Config::class)->get('auth')
         );
 
-        $sentinel = Sentinel::instance($bootstrapper);
+        $sentinel = \Cartalyst\Sentinel\Native\Facades\Sentinel::instance($bootstrapper);
 
         $this->sentinel = $sentinel->getSentinel();
 

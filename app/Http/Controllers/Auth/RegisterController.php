@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Views\View;
+use Cartalyst\Sentinel\Sentinel;
 use Laminas\Diactoros\Response;
 use Psr\Http\Message\ServerRequestInterface;
 
 class RegisterController
 {
     public function __construct(
-        protected View $view
+        protected View $view,
+        protected Sentinel $auth,
     )
     {
     }
@@ -27,7 +29,9 @@ class RegisterController
 
     public function store(ServerRequestInterface $request): Response
     {
-        // Handle the registration form submission
+        $this->auth->registerAndActivate($request->getParsedBody());
+
+        return new Response\RedirectResponse('/dashboard');
     }
 
 }

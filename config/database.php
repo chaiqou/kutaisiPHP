@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'driver' => env('DB_DRIVER', 'mysql'),
-
+    'driver' => env('DB_DRIVER', 'sqlite'),
 
     'mysql' => [
         'driver' => 'mysql',

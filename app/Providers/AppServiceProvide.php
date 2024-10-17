@@ -15,7 +15,6 @@ class AppServiceProvide extends AbstractServiceProvider implements BootableServi
         // Register Ignition for better error handling
         // Only do this in development mode
         // Ignition will not be registered in production
-        $config = $this->container->get(Config::class);
         Ignition::make()->register();
 
     }

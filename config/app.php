@@ -2,6 +2,7 @@
 
 
 use App\Providers\AppServiceProvide;
+use App\Providers\AuthServiceProvider;
 use App\Providers\DatabaseServiceProvider;
 use App\Providers\RequestServiceProvider;
 use App\Providers\RouteServiceProvider;
@@ -17,5 +18,6 @@ return [
         RouteServiceProvider::class,
         DatabaseServiceProvider::class,
         ViewServiceProvider::class,
+        AuthServiceProvider::class,
     ],
 ];

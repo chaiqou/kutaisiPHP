@@ -29,7 +29,9 @@ class RegisterController
 
     public function store(ServerRequestInterface $request): Response
     {
-        $this->auth->registerAndActivate($request->getParsedBody());
+        if($user = $this->auth->registerAndActivate($request->getParsedBody())) {
+           $this->auth->login($user);
+        }
 
         return new Response\RedirectResponse('/dashboard');
     }

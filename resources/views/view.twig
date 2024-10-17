@@ -1,9 +1,0 @@
-{% extends 'layouts/app.twig' %}
-
-{% block content %}
- {% for user in users %}
-     <div><a href="/users/{{ user.id }}">{{ user.name }}</a></div>
- {% endfor %}
-
-
-{% endblock %}

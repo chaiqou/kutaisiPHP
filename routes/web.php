@@ -13,5 +13,6 @@ return static function (Router $router, ContainerInterface $container) {
     $router->get('/dashboard', DashboardController::class);
     $router->get('/users/{user}', UsersController::class);
     $router->get('/register', [RegisterController::class, 'index']);
+    $router->post('/register', [RegisterController::class, 'store']);
 
 };

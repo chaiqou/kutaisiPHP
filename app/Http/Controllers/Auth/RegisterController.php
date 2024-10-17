@@ -25,4 +25,9 @@ class RegisterController
         return $response;
     }
 
+    public function store(ServerRequestInterface $request): Response
+    {
+        // Handle the registration form submission
+    }
+
 }

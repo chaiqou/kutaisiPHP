@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
+use Cartalyst\Sentinel\Users\EloquentUser;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class User extends EloquentUser
 {
 
     protected $table = 'users';

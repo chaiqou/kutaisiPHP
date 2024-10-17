@@ -11,7 +11,7 @@ use League\Container\ServiceProvider\BootableServiceProviderInterface;
 class AuthServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface
 {
 
-    protected Sentinel $sentinel;
+    protected $sentinel;
     public function boot(): void
     {
         $bootstrapper = new SentinelBootstrapper(

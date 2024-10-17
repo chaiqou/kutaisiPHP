@@ -20,7 +20,7 @@ class HomeController
         $response = new Response();
 
         $response->getBody()->write(
-            $this->view->render('view')
+            $this->view->render('home')
         );
 
         return $response;

@@ -93,6 +93,7 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         array (
             'League\\Route\\' => 13,
             'League\\Container\\' => 17,
+            'Laravel\\SerializableClosure\\' => 28,
             'Laminas\\HttpHandlerRunner\\' => 26,
             'Laminas\\Diactoros\\' => 18,
         ),
@@ -276,6 +277,10 @@ class ComposerStaticInit6111592ad0e8787c5d5ccb30f085ab57
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'Laravel\\SerializableClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
         'Laminas\\HttpHandlerRunner\\' => 
         array (

@@ -16,9 +16,8 @@ class AppServiceProvide extends AbstractServiceProvider implements BootableServi
         // Only do this in development mode
         // Ignition will not be registered in production
         $config = $this->container->get(Config::class);
-        if ($config->get('app.debug')) {
-            Ignition::make()->register();
-        }
+        Ignition::make()->register();
+
     }
 
     public function provides(string $id): bool
